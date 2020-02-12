@@ -56,7 +56,7 @@
                 android:layout_marginTop="5dp"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:text="Description surpeeeeeeeeeeeeeeeer mégaaaaaaaaaaaaaaaa looooooooongue" />
+                android:text="Description surpeeeeeeeeeeeeeeeer mégaaaaaaaaaaaaaaaa looooooooongue"/>
 
             <Button
                 android:id="@+id/btn1"

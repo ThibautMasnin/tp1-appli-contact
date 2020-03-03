@@ -29,7 +29,8 @@
                 android:layout_height="125dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/ah" />
+                android:src="@drawable/ah"
+                android:layout_marginBottom="10dp"/>
 
             <TextView
                 android:id="@+id/title"
@@ -56,26 +57,87 @@
                 android:layout_marginTop="5dp"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:text="Description surpeeeeeeeeeeeeeeeer mégaaaaaaaaaaaaaaaa looooooooongue"/>
+                android:text="Description surpeeeeeeeeeeer mégaaaaaaaaaaaaaaaa looooooooongue"
+                android:layout_width="10dp" />
 
-            <Button
-                android:id="@+id/btn1"
-                android:layout_width="115dp"
+            <CheckBox
+                android:id="@+id/fav"
                 android:layout_below="@id/description"
                 android:layout_alignLeft="@id/description"
                 android:layout_alignBottom="@id/image"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:text="Bouton 1"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle" />
 
             <Button
-                android:layout_width="115dp"
+                android:layout_width="125dp"
                 android:layout_below="@id/description"
-                android:layout_alignTop="@id/btn1"
-                android:layout_alignRight="@id/description"
+                android:layout_alignTop="@id/fav"
                 android:layout_alignBottom="@id/image"
-                android:layout_marginRight="5dp"
-                android:text="Bouton 2" />
+                android:layout_toRightOf="@id/fav"
+                android:layout_marginLeft="25dp"
+                android:text="Voir plus"
+                android:layout_height="10dp" />
+
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ah"
+                android:layout_below="@id/image"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/image2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/image2"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Titre super méga long de la mort qui tue pas encore de la masnin attitude"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/description2"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_alignLeft="@id/title2"
+                android:layout_alignRight="@id/title2"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Description surpeeeeeeeeeeer mégaaaaaaaaaaaaaaaa looooooooongue"
+                android:layout_width="10dp" />
+
+            <CheckBox
+                android:id="@+id/fav2"
+                android:layout_below="@id/description2"
+                android:layout_alignLeft="@id/description2"
+                android:layout_alignBottom="@id/image2"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/starStyle" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_below="@id/description2"
+                android:layout_alignTop="@id/fav2"
+                android:layout_alignBottom="@id/image2"
+                android:layout_toRightOf="@id/fav2"
+                android:layout_marginLeft="25dp"
+                android:text="Voir plus"
+                android:layout_height="10dp" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

@@ -55,6 +55,7 @@
         style="?android:attr/starStyle" />
 
     <Button
+        android:id="@+id/detail"
         android:layout_width="125dp"
         android:layout_below="@id/description"
         android:layout_alignTop="@id/fav"
@@ -114,6 +115,7 @@
         style="?android:attr/starStyle" />
 
     <Button
+        android:id="@+id/detail2"
         android:layout_width="125dp"
         android:layout_below="@id/description2"
         android:layout_alignTop="@id/fav2"

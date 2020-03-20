@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:verticalScrollbarPosition="defaultPosition" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity3">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ah"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_toRightOf="@id/image"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Nom :"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/image"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Numéro :"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/fav"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/num"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/starStyle" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/image"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:text="Mail :"/>
+
+    <TextView
+        android:id="@+id/ville"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/mail"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:text="Ville :"/>
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/ville"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:text="Notes :"/>
+
+    <Button
+        android:id="@+id/modif"
+        android:layout_below="@id/notes"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="25dp"
+        android:text="Modifier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@id/modif"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
+        android:text="Supprimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
